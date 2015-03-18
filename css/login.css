@@ -1,0 +1,92 @@
+.body1
+{
+  background-color: #BDC3C7 ;
+  width:100%;
+  height:100%;
+}
+
+.contain1
+
+{
+
+background-color: #F0F0F0;
+width: 25%;
+height: 57%;
+border-radius: 5%;
+float: right;
+margin: 0px auto;
+margin: 10% 41%
+}
+.icon1
+{
+
+display: block;
+width: 30px;
+height: 30px;
+background: none repeat scroll 0% 0% #073154;
+text-align: center;
+line-height: 30px;
+border-radius: 50%;
+
+}
+
+.icon1 p
+{
+    text-decoration: none #89641A;
+    color:#2E9F19;
+    padding-left: 36%;
+    margin-top: 10px;
+}
+
+.lines
+{
+margin-top:10%;
+}
+
+.input-texts
+{
+
+}
+.login1
+{
+margin-top:10%;
+}
+.sign-in
+{
+  border-radius:10%;
+  background-color: white;
+  margin-top:15%;
+  margin-left: 13%;
+
+}
+.one
+{
+  border-bottom-left-radius: 13%;
+  border-bottom-right-radius: 11%;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 7%;
+}
+.push
+{
+margin-left: 25%;
+margin-top: 7%;
+}
+ /**/
+
+body .container
+{
+max-width: 40%;
+margin: 0px auto;
+padding: 50px;
+}
+
+body
+{
+background-color:#BDC3C7;
+}
+.login-body
+{
+  background-color: #ECF0F1;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
