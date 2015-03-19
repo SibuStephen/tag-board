@@ -40,6 +40,7 @@ body {
 .header a {
   color: #fff;
   text-decoration: none;
+  font-size:1.3em;
 }
 
 .header-half {
@@ -52,20 +53,21 @@ body {
   text-align: right;
 }
 
-.logo-link {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: #073154;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
+.logo-link
+{
+ display: block;
+ width: 40px;
+ height: 34px;
+ background: none repeat scroll 0% 0% #073154;
+ color: #FFF;
+ text-decoration: none;
+ text-align: center;
+ line-height: 35px;
+ border-radius: 50%;
 }
 
 .tag-board {
-  font-size: .85em;
+  font-size: 1em;
   padding: 5px;
 }
 
@@ -74,7 +76,7 @@ body {
   padding: 2px 5px;
   background: indianred;
   color: #fff;
-  font-size: .7em;
+  font-size: 1.3em;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -99,13 +101,15 @@ color:#6FD16F;
 }
 
 .main {
-  padding: 20px 0;
+
+ padding: 19px 0px 80px;
+ position: relative;
 }
 
 .tile {
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   background: none repeat scroll 0% 0% skyblue;
   padding-bottom: 5px;
   margin-right: 20px;
@@ -118,7 +122,7 @@ color:#6FD16F;
 }
 
 .tile-header {
-  font-size: .99em;
+  font-size: 1.5em;
   border-bottom: 1px solid #fff;
   margin: 0px;
   line-height: 1.2;
@@ -130,12 +134,12 @@ color:#6FD16F;
   height: 80%;
   text-align: center;
   line-height: 89px;
-  font-size: 1.5em;
+  font-size: 2em;
   position:relative;
 }
 
 .tile-footer {
-  font-size: .65em;
+  font-size: 1.3em;
   text-align: right;
   border-top: 1px solid #fff;
 }
@@ -161,6 +165,8 @@ color:#6FD16F;
   background: #505080;
   color: #fff;
   padding: 5px 0;
+  position: relative;
+
 }
 
 .footer-container
@@ -184,18 +190,18 @@ margin: 0px auto;
 
 .small
 {
-   font-size: .85em;
+   font-size: 1.5em;
 }
 
 .small-value
 {
 
-line-height: 0;
-float: right;
-font-size: 0.55em;
-position: absolute;
-margin: -5px 10px;
 display: inline-block;
+line-height: 0;
+font-size: 1em;
+clear: both;
+float: right;
+padding-top: 24%;
 
 }
 
