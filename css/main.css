@@ -1,6 +1,11 @@
-
 /**Main File*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #F1F1F1;
   font-family: 'Titillium Web', sans-serif;
   font-size: 75%;
 }
@@ -13,7 +18,7 @@ body {
 
 .inline-block {
   display: inline-block;
-  margin: 9px;
+  /*margin: 9px;*/
 }
 
 .container {
@@ -79,7 +84,6 @@ body {
 }
 
 .logout {
-  display: inline-block;
   padding: 2px 5px;
   color: #fff;
   font-size: .7em;
@@ -99,6 +103,7 @@ body {
 }
 
 .tile {
+  position: relative;
   display: inline-block;
   width: 200px;
   height: 200px;
@@ -114,19 +119,18 @@ body {
 }
 
 .tile-header {
-  font-size: 1.5em;
+  font-size: 1.65em;
   border-bottom: 1px solid #fff;
   margin: 0px;
   line-height: 1.2;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 2px;
 }
 
 .tile-details {
-  height: 80%;
+  height: 75%;
   text-align: center;
-  line-height: 89px;
-  font-size: 2.6em;
+  font-size: 3em;
   position: relative;
 }
 
@@ -134,6 +138,10 @@ body {
   font-size: 1.3em;
   text-align: right;
   border-top: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }
 
 .b-color-green {
@@ -158,11 +166,10 @@ body {
   padding: 5px 0;
   position: relative;
 }
-
+/*
 .footer-container {
-  max-width: 25%;
   margin: 0px auto;
-}
+}*/
 
 .footer-container a {
   text-decoration: none;
@@ -170,31 +177,31 @@ body {
   font-size: 0.85em;
 }
 
-body {
-  background-color: #F1F1F1;
-}
-
 .small {
   font-size: 1.5em;
+  text-align: center;
 }
 
 .small-value {
-  display: inline-block;
-  line-height: 0;
-  font-size: 0.55em;
-  clear: both;
-  float: right;
-  padding-top: 27%;
-  padding-right: 3%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .text-value {
   position: relative;
-  font-family: "Frutiger Neue W02 Thin";
-  top: 18%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.text-value span {}
+.text-value span {
+  font-size: 1.2em;
+}
 
 /* Login css*/
 
@@ -333,4 +340,19 @@ padding-bottom: 1%;
   padding-bottom: 5px;
   font-size: 1.3em;
   color:#2C3E50;
+}
+
+
+/* Icons fonts */
+.fa-long-arrow-up{
+  position: relative;
+  top: -3px;
+}
+.fa-long-arrow-down{
+  position: relative;
+}
+
+.header-inline-block{
+display: inline-block;
+margin: 9px;
 }
