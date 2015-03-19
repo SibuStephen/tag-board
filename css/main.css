@@ -203,6 +203,10 @@ body {
   font-size: 1.2em;
 }
 
+.container-header
+{
+ max-width: 90%;
+}
 /* Login css*/
 
 
@@ -220,11 +224,10 @@ body {
  padding-bottom: 10;
 }
 
-.login-container
-{
-max-width: 23%;
-margin: 0px auto;
-padding: 150px;
+.login-container{
+
+ max-width: 50%;
+ padding: 150px;
 }
 
 body
