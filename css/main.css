@@ -1,6 +1,7 @@
 
 /**Main File*/
 body {
+  font-family: 'Titillium Web', sans-serif;
   font-size: 75%;
 }
 
@@ -277,11 +278,13 @@ border-radius: 50%;
 
 }
 
-.one
-{
+.one{
+
   padding: 5px 8px;
   margin: 8px 0px;
   box-sizing: border-box;
+  width: 100%;
+  font-size: 1.2em;
 }
 legend
 {
@@ -306,7 +309,11 @@ margin-bottom: 15px;
 }
 .sign-in
 {
-  text-decoration: none;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
 .login-header
