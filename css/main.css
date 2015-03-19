@@ -198,10 +198,11 @@ margin: 0px auto;
 
 display: inline-block;
 line-height: 0;
-font-size: 1em;
+font-size: 0.65em;
 clear: both;
 float: right;
-padding-top: 24%;
+padding-top: 27%;
+padding-right: 3%;
 
 }
 
@@ -209,4 +210,5 @@ padding-top: 24%;
 {
   position: relative;
  font-family: "Frutiger Neue W02 Thin";
+ top:18%;
 }
