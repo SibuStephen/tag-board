@@ -1,0 +1,130 @@
+
+.header
+{
+  max-width: 60%;
+  margin:0 auto;
+
+}
+
+.header-title
+{
+ text-align: center;
+ color:#fff;
+ padding-bottom: 10;
+}
+
+body .container
+{
+max-width: 23%;
+margin: 0px auto;
+padding: 150px;
+}
+
+body
+{
+background-color:#BDC3C7;
+}
+.login-body
+{
+  background-color: #ECF0F1;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+.icon
+{
+
+ max-width: 25%;
+ margin: 0 auto;
+}
+
+.icon1
+{
+
+display: block;
+width: 83px;
+height: 83px;
+background: none repeat scroll 0% 0% #073154;
+text-align: center;
+line-height: 62px;
+border-radius: 50%;
+
+}
+
+.icon1 p
+{
+    text-decoration: none #89641A;
+    color: #1ABC9C;
+    margin-top: 10px;
+    font-size: 3em;
+}
+
+.login-content h1
+{
+  color:#2C3E50;
+  text-align: center;
+
+}
+
+.login-content
+{
+
+ text-align: center;
+ padding: 8% 40px;
+
+}
+.one:before
+{
+  margin-top:10%;
+
+}
+
+.one
+{
+  padding: 5px 8px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+}
+legend
+{
+ color: #2C3E50;
+text-align: center;
+font-weight: bold;
+border-width: 1px;
+border-style: solid;
+border-color: #C9C9C9;
+width: 100%;
+display: block;
+border-bottom: -11%;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+}
+
+.input-fields
+{
+
+margin-bottom: 15px;
+}
+.sign-in
+{
+  text-decoration: none;
+}
+
+.login-header
+{
+
+Background-color: #505080;
+padding-top: 2%;
+border-radius: 4%;
+padding-bottom: 1%;
+}
+
+.login-account{
+
+  text-align: center;
+  margin: 0px 0px 20px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  font-size: 1.3em;
+  color:#2C3E50;
+}
