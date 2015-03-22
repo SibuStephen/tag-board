@@ -227,7 +227,7 @@ body {
 
 .common-container{
 
- max-width: 90%;
+ max-width: 50%;
  padding: 150px;
 }
 
@@ -300,8 +300,8 @@ border-radius: 50%;
 
 .input-fields
 {
- margin-bottom: 15px;
- margin-top: 15px;
+ margin-bottom: 20px;
+ margin-top: 29px;
 }
 .sign-in
 {
@@ -384,6 +384,7 @@ font-size: 2em;
 display: inline-block;
 color:indianred;
 max-width: 100%;
+padding-top: 18px;
 }
 
 .go-button
@@ -407,14 +408,13 @@ li:nth-child(3n+1)
 {
   width: 25%;
  -webkit-transform: translate(-8%);
-  margin: 7% 27px 25px;
 }
 
 .table-content{
- overflow: hidden;
- max-width: 75%;
+
  margin: 0px auto;
- position:relative;
+ max-width:95%;
+ padding-bottom: 3%;
 }
 
 .circular-model
