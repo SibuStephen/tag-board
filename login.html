@@ -5,6 +5,14 @@
       <link rel="stylesheet" href="icons/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/normalize.css">
       <link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+ <script type="text/javascript">
+
+     var sign_in=document.getElementById("button2");
+
+
+</script>
+
   </head>
   <body>
     <section class="common-container container">
@@ -15,14 +23,14 @@
          </div>
          <h1 class="header-title">My Tag Board</h1>
        </section>
-       <form class="login-content">
+       <form class="login-content" action="index.html">
         <h3 class="login-account">Login to your Account</h3>
 
          <div class="input-fields">
 
            <input type="text" name="email-address" placeholder="Email-Address" class="one email-address"/>
            <input type="password" name="Password" placeholder="Password" class="one password"/>
-           <input type="submit" class="button sign-in" value ="SIGN-IN"></input>
+           <input id="button2" type="submit" class="button sign-in" onSubmit="redirect()" value ="SIGN-IN"></input>
 
          </div>
        </form>
