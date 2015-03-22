@@ -5,19 +5,30 @@
       <link rel="stylesheet" href="icons/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/normalize.css">
       <link href="css/main.css" type="text/css" rel="stylesheet"/>
+  <script type="text/javascript">
+
+         var io=document.getElementById("button1");
+
+       function redirect()
+       {
+          window.location="index.html";
+
+       }
+  </script>
   </head>
  <body>
   <section class="container clearfix">
     <form class="search-content">
     <div class=" common-body search-body">
       <div class="common-header search-header">
-        <a href="#" class="button close">Close</a>
+        <input id="button1" type="button" class="button close" onClick="redirect();" value="Close">
         <h1 class ="header-title">Search Tags</h1>
       </div>
       <div class="input-fields">
        <input type="text" class="one search-button" placeholder="Search Tags"/>
        <input type="button" class ="button go-button" value="Go"/>
       </div>
+       </form>
       <div class="table-content ">
 
          <li>Name</li>
@@ -55,7 +66,6 @@
 
     </div>
       </div>
-     </form>
     </div>
   </section>
  </body>

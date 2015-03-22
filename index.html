@@ -5,6 +5,25 @@
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+ <script type="text/javascript">
+
+     var add_tag=document.getElementById("button2");
+     var user_logout=document.getElementById("user_logout");
+
+function redirect()
+{
+
+           window.location="search-box.html";
+
+}
+
+function redirect1()
+{
+
+            window.location="login.html";
+}
+  </script>
   </head>
   <body>
     <header class="header clearfix">
@@ -16,12 +35,12 @@
           <div class="tag-board header-inline-block">
             <a class="small head" href="#">My Tag Board</a>
           </div>
-          <a class=" header-inline-block button button-add"><i class="icon-plus"></i>Add Tag</a>
+          <span id="button2" onClick="redirect()" class=" header-inline-block button button-add"><i class="icon-plus"></i>Add Tag</span>
         </div>
         <div class="header-half header-right">
           <a class="user-name ">Sid Shankar</a>
           <div class="user-logout header-inline-block">
-            <a class=" button logout " href="#">Logout</a>
+            <span id="user_logout" onClick="redirect1()" class=" button ">Logout</span>
           </div>
         </div>
       </section>
