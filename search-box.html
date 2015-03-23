@@ -14,59 +14,64 @@
           window.location="index.html";
 
        }
+
   </script>
   </head>
  <body>
   <section class="container clearfix">
-    <form class="search-content">
+   <section id="search-c" class="search-content">
     <div class=" common-body search-body">
       <div class="common-header search-header">
         <input id="button1" type="button" class=" button close" onClick="redirect();" value="Close">
         <h1 class ="header-title">Search Tags</h1>
       </div>
+    <form>
       <div class="input-fields">
        <input type="text" class="one search-button" placeholder="Search Tags"/>
        <input type="button" class =" button go-button" value="Go"/>
       </div>
-       </form>
+        <p class="not-found-result result-color">Not Found</p>
+    </form>
       <div class="table-content ">
-
+       <p class="found-result result-color">Found 7 matching results</p>
+        <ul>
          <li class="name">Name</li>
          <li class="desc">Description</li>
          <li class="add">Add</li>
 
          <li>T1</li>
          <li>Temp of water</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
+         <li><a href="#" class="button circular-model">+</a></li>
 
          <li>T2</li>
          <li>Stock market</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
+         <li><a href="#" class="button circular-model">+</a></li>
 
          <li>T3</li>
          <li>Stock Rise</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
+         <li><a href="#" class="button circular-model">+</a></li>
 
          <li>T4</li>
          <li>Stock Rise</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
+         <li><a href="#" class="button circular-model">+</a></li>
 
          <li>T5</li>
          <li>Rise in petrol</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
+         <li><a href="#" class="button circular-model">+</a></li>
 
-        <li>T6</li>
+         <li>T6</li>
          <li>Rise in Stock</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
+         <li><a href="#" class="button circular-model">+</a></li>
 
          <li>T7</li>
          <li>Rise in Water Prices</li>
-         <li><input type="button" class="button circular-model" value="+"></li>
-
+         <li><a href="#" class="button circular-model">+</a></li>
+        </ul>
 
     </div>
       </div>
     </div>
+  </section>
   </section>
  </body>
 </html>

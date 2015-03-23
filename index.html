@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/normalize.css">
+
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
 
  <script type="text/javascript">
 
      var add_tag=document.getElementById("button2");
+
      var user_logout=document.getElementById("user_logout");
 
-function redirect()
-{
-
-           window.location="search-box.html";
-
-}
+ function redirect()
+ {
+    window.location="index.html";
+ }
 
 function redirect1()
-{
+ {
+    window.location="login.html";
+ }
 
-            window.location="login.html";
+    var modalWrapper = document.getElementById("modal_wrapper");
+    var modalWindow = document.getElementById("modal_window");
+
+
+function show()
+{
+  document.getElementById("modal_window").style.display="block";
 }
+
+function exit()
+{
+  document.getElementById("modal_window").style.display="none";
+}
+
+function setting_redirect()
+{
+  document.getElementById("modal_window1").style.display="block";
+
+}
+
+function exit_settings()
+{
+  document.getElementById("modal_window1").style.display="none";
+}
+
+
   </script>
   </head>
   <body>
@@ -35,12 +64,12 @@ function redirect1()
           <div class="tag-board header-inline-block">
             <a class="small head" href="#">My Tag Board</a>
           </div>
-          <span id="button2" onClick="redirect()" class=" header-inline-block button button-add"><i class="icon-plus"></i>Add Tag</span>
+          <a  id="button2" onClick="show();"class=" header-inline-block button button-add"><i class="icon-plus"></i>Add Tag</a>
         </div>
         <div class="header-half header-right">
           <a class="user-name ">Sid Shankar</a>
           <div class="user-logout header-inline-block">
-            <span id="user_logout" onClick="redirect1()" class=" button ">Logout</span>
+            <span id="user_logout" onClick="redirect1();" class=" button ">Logout</span>
           </div>
         </div>
       </section>
@@ -49,7 +78,8 @@ function redirect1()
     <section class="main clearfix">
       <div class="container">
         <div class="tile b-color-red">
-          <h2 class="tile-header">T12345</h2>
+          <h2 class="tile-header">T12345<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
         <div class="tile-details">
           <div class="text-value">
             <i class="fa fa-long-arrow-up"></i>
@@ -60,7 +90,8 @@ function redirect1()
           <div class="tile-footer">5 min ago</div>
         </div>
         <div class="tile b-color-gray">
-          <h2 class="tile-header">T12346</h2>
+          <h2 class="tile-header">T12346<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
           <div class ="text-value">
              <span class="inline-block">30</span>
@@ -70,7 +101,8 @@ function redirect1()
           <div class="tile-footer">6 mins ago</div>
         </div>
         <div class="tile b-color-yellow">
-          <h2 class="tile-header">T12347</h2>
+          <h2 class="tile-header">T12347<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
           <div class ="text-value">
             <i class ="fa fa-long-arrow-up"></i>
@@ -81,7 +113,8 @@ function redirect1()
           <div class="tile-footer">10 min ago</div>
         </div>
         <div class="tile b-color-green">
-          <h2 class="tile-header">T12348</h2>
+          <h2 class="tile-header">T12348<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
           <div class ="text-value">
             <i class ="fa fa-long-arrow-down"></i>
@@ -92,7 +125,8 @@ function redirect1()
           <div class="tile-footer">15 min ago</div>
         </div>
         <div class="tile b-color-red">
-          <h2 class="tile-header">T12349</h2>
+          <h2 class="tile-header">T12349<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
             <div class="text-value">
               <i class="fa fa-long-arrow-up"></i>
@@ -103,7 +137,8 @@ function redirect1()
           <div class="tile-footer">20 min ago</div>
         </div>
         <div class="tile b-color-gray">
-          <h2 class="tile-header">T12350</h2>
+          <h2 class="tile-header">T12350<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
             <div class ="text-value">
                <span class="inline-block">5.00</span>
@@ -113,7 +148,8 @@ function redirect1()
           <div class="tile-footer">30 min ago</div>
         </div>
         <div class="tile b-color-yellow">
-          <h2 class="tile-header">T12351</h2>
+          <h2 class="tile-header">T12351<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
            <div class ="text-value">
               <i class ="fa fa-long-arrow-up"></i>
@@ -124,7 +160,8 @@ function redirect1()
           <div class="tile-footer">40 mins ago</div>
         </div>
         <div class="tile b-color-green">
-          <h2 class="tile-header">T12352</h2>
+          <h2 class="tile-header">T12352<p class="image-setting"><img src="images.png" onClick="setting_redirect();"/>
+          </p></h2>
           <div class="tile-details">
           <div class ="text-value">
             <i class ="fa fa-long-arrow-down"></i>
@@ -137,10 +174,103 @@ function redirect1()
 
       </div>
     </section>
+<!-- -->
+
+ <div id="modal_wrapper">
+ <div id="modal_window">
+
+  <section id="search-c" class="search-content">
+    <div class=" common-body search-body">
+      <div class="common-header search-header">
+        <input id="button1" type="button" class=" button close" onClick="exit();" value="Close">
+        <h1 class ="header-title">Search Tags</h1>
+      </div>
+    <form>
+      <div class="input-fields">
+       <input type="text" class="one search-button" placeholder="Search Tags"/>
+       <input type="button" class =" button go-button" value="Go"/>
+      </div>
+        <p class="not-found-result result-color">Not Found</p>
+    </form>
+      <div class="table-content ">
+       <p class="found-result result-color">Found 7 matching results</p>
+        <ul>
+         <li class="name">Name</li>
+         <li class="desc">Description</li>
+         <li class="add">Add</li>
+
+         <li>T1</li>
+         <li>Temp of water</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+
+         <li>T2</li>
+         <li>Stock market</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+
+         <li>T3</li>
+         <li>Stock Rise</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+
+         <li>T4</li>
+         <li>Stock Rise</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+
+         <li>T5</li>
+         <li>Rise in petrol</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+
+         <li>T6</li>
+         <li>Rise in Stock</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+
+         <li>T7</li>
+         <li>Rise in Water Prices</li>
+         <li><a href="#" class="button circular-model">+</a></li>
+        </ul>
+
+     </div>
+     </div>
+     </div>
+  </section>
+
+  </div>
+  </div>
+
+
+  <!-- -->
+  <div id="modal_wrapper1">
+  <div id="modal_window1">
+
+   <div class="common-body">
+       <section class ="common-header">
+         <h1 class="header-title">Settings</h1>
+       </section>
+       <form class="login-content" action="index.html">
+
+         <div class="setting-input">
+
+          <h1>Upper Range</h1><input type="number" name="Enter Upper Range" placeholder="Enter Upper Range" class="one range"/>
+          <h1>Lower Range</h1><input type="number" name="Enter LowerRange" placeholder="Enter LowerRange" class="one  range"/>
+
+         </div>
+
+          <div class="position-setting">
+
+           <a href="#" id="button2" class="button b1" onSubmit="redirect()" >Ok</a>
+           <a href="#" id="button2" class="button b2" onClick="exit_settings();"onSubmit="redirect()">Cancel</a>
+
+          </div>
+         </div>
+
+  </div>
+  </div>
+<!-- -->
+
     <footer class="footer clearfix">
     <div class ="footer-container">
       <p class="small foot">My Tag Board Copyright 2015 </p>
     </div>
+
     </footer>
   </body>
 </html>

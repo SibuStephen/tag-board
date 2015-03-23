@@ -96,6 +96,7 @@ body {
   content: "+";
   font-weight: bolder;
   padding-right: 5px;
+  cursor: pointer;
 }
 
 .main {
@@ -359,6 +360,7 @@ margin: 9px;
   float: right;
   margin-top: -2%;
   font-size:2em;
+  border: 0px none;
 }
 
 .search-find{
@@ -384,39 +386,42 @@ font-size: 2em;
 display: inline-block;
 color:indianred;
 max-width: 100%;
-padding-top: 18px;
 }
 
 .go-button
 {
   font-size: 1.5em;
   padding: 2px 23px 3px;
+  border: 0px none;
 }
 li:nth-child(n+1)
 {
   -webkit-transform: translate(-8%);
    width:25%;
    border-style: outset;
+   line-height: 2;
 }
 
 li:nth-child(2n+1)
 {
   -webkit-transform: translate(-8%);
   width:25%;
- border-style: outset;
+  border-style: outset;
+  line-height: 2;
 }
 
 li:nth-child(3n+1)
 {
   width: 25%;
  -webkit-transform: translate(-8%);
-border-style: outset;
+ border-style: outset;
+ line-height: 2;
 }
 
 .table-content{
 
  margin: 0px auto;
- max-width:95%;
+ max-width:100%;
  padding-bottom: 3%;
 }
 
@@ -446,4 +451,138 @@ border-style: outset;
 {
  color:#2c3e50;
 
+}
+
+.not-found-result
+{
+
+ margin:0 auto;
+}
+.found-result
+{
+
+ margin: 0 auto;
+ margin-top: 1%;
+ margin-bottom: 2%;
+}
+
+.result-color
+{
+  background-color:white;
+  font-size:2em;
+  max-width: 60%;
+}
+
+/* Wrapper classes*/
+
+ #modal_wrapper.overlay:before
+  {
+
+    content: " ";
+    width: 100%; height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+  }
+  #modal_window
+    {
+      display:none;
+      left: 10%;
+      top: -10%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      z-index: 200;
+      position: absolute;
+      width: 77%;
+    }
+
+    #modal_wrapper.overlay #modal_window
+    {
+        display: block;
+    }
+
+
+    /*Wrapper class2*/
+
+ #modal_wrapper1.overlay:before
+  {
+
+    content: " ";
+    width: 100%; height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+  }
+  #modal_window1
+    {
+      display:none;
+      left: 29%;
+      top: 2%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      z-index: 200;
+      position: absolute;
+      width: 41%;
+
+    }
+
+    #modal_wrapper1.overlay1 #modal_window1
+    {
+        display: block;
+    }
+
+/* */
+
+.image-setting
+{
+position: absolute;
+right: 5px;
+font-size: 20px;
+line-height: 1;
+top: -17px;
+cursor:pointer;
+}
+.btn1-ok
+{
+padding: 9px 32px 4px;
+}
+
+
+.range
+{
+ width:59%;
+}
+
+.range input::before
+{
+ content:"Upper";
+}
+.setting-input
+{
+
+}
+.common-button
+{
+  padding: 16px 37px;
+}
+
+.position-setting
+{
+ margin-top:13px;
+}
+
+.b1
+{
+ padding: 6px 35px 8px;
+}
+
+.b2
+{
+ padding: 6px 23px 8px;
 }
