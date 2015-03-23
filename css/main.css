@@ -390,24 +390,27 @@ padding-top: 18px;
 .go-button
 {
   font-size: 1.5em;
-  padding: 0px 21px 1px;
+  padding: 2px 23px 3px;
 }
 li:nth-child(n+1)
 {
   -webkit-transform: translate(-8%);
    width:25%;
+   border-style: outset;
 }
 
 li:nth-child(2n+1)
 {
   -webkit-transform: translate(-8%);
   width:25%;
+ border-style: outset;
 }
 
 li:nth-child(3n+1)
 {
   width: 25%;
  -webkit-transform: translate(-8%);
+border-style: outset;
 }
 
 .table-content{
@@ -428,4 +431,5 @@ li:nth-child(3n+1)
   border: 0;
   outline: 0;
   font-weight: bold;
+  padding-top:0px;
 }
