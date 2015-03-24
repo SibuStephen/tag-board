@@ -8,9 +8,22 @@
 
  <script type="text/javascript">
 
-     var sign_in=document.getElementById("button2");
+     // var sign_in=document.getElementById("button2");
 
+function redirect()
+{
+ // window.location="index.html";
 
+ if(form1.address.value =="sibu" && form1.Password1.value=="srijan123")
+ {
+
+   form1.action="index.html";
+ }
+ else
+ {
+  alert("Wrong username try again");
+ }
+}
 </script>
 
   </head>
@@ -23,14 +36,15 @@
          </div>
          <h1 class="header-title">My Tag Board</h1>
        </section>
-       <form class="login-content" action="index.html">
+       <form name="form1" class="login-content" onsubmit=" return redirect();">
+
         <h3 class="login-account">Login to your Account</h3>
 
          <div class="input-fields">
 
-           <input type="text" name="email-address" placeholder="Email-Address" class="one email-address"/>
-           <input type="password" name="Password" placeholder="Password" class="one password"/>
-           <input id="button2" type="submit" class="button sign-in" onSubmit="redirect()" value ="SIGN-IN"></input>
+           <input type="text" id="email-address" name="address" placeholder="Email-Address" class="one email-address"/>
+           <input type="password" id="passwd" name="Password1" placeholder="Password" class="one password"/>
+           <input id="button2" type="submit" class="button sign-in" value ="SIGN-IN"></input>
 
          </div>
        </form>
