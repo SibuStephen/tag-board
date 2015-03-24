@@ -61,40 +61,46 @@ function add_click(e1){
    {
     e1.className=="fa fa-check";
    }
+   else
+     if(e1.className == "fa-fa check")
+     {
+      e1.className=="fa fa-plus";
+     }
 }
 function add_one()
 {
-  var io = document.getElementsByTagName("i");
+  var io = document.getElementsByClassName("fa fa-plus");
 
 for (i=0 ; i<io.length; i++)
 {
-  if(io[i].className="fa fa-plus")
+  if(io.className="fa fa-plus")
   {
-    io[i].className="fa fa-check";
+    io.className="fa fa-check";
   }
-  else
-    if (io[i].className="fa fa-check")
-  {
-    io[i].className="fa fa-check";
-  }
+
 }
 }
+
 
 function search_text()
 {
 
-  if(document.getElementById("search").innerHTML == "not found")
+ var forms = form2.elements["search"].value;
 
+  if(forms == "n")
+{
+      document.getElementById("not-found").style.display="block";
+      document.getElementById("found").style.display="none";
+}else if (forms == "found"){
 
-     document.getElementById("found").style.display="none";
-     document.getElementById("not-found").style.display="block";
-
-  if (document.getElementById("search").innerHTML == "found")
-
-
-     document.getElementById("not-found").style.display="none";
      document.getElementById("found").style.display="block";
+     document.getElementById("not-found").style.display="none";
+}else if(forms == " "){
 
+    document.getElementById("not-found").style.display="none";
+    document.getElementById("found").style.display="none";
+
+  }
 
 }
 
@@ -236,11 +242,13 @@ function search_text()
       </div>
     <form name="form2">
       <div class="input-fields">
+
        <input type="text" id="search" class="one search-button" placeholder="Search Tags"/>
-       <input type="button" class ="button go-button" onClick="search_text()" value="Go"/>
+       <input type="button" class ="button go-button" onClick="search_text();" value="Go"/>
+
       </div>
         <p id="not-found" class="not-found-result result-color">Not Found</p>
-    </form>
+   </form>
       <div id="found" class="table-content">
        <p class="found-result result-color">Found 7 matching results</p>
 
