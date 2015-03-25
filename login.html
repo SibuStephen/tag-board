@@ -29,8 +29,8 @@ function redirect()
   </head>
   <body>
     <section class="common-container container">
-     <div class="common-body">
-       <section class ="common-header">
+     <div class="">
+       <section class ="">
          <div class="icon">
            <a class="icon1"><p>T</p></a>
          </div>
@@ -38,13 +38,15 @@ function redirect()
        </section>
        <form name="form1" class="login-content" onsubmit=" return redirect();">
 
-        <h3 class="login-account">Login to your Account</h3>
+       <!--  <h3 class="login-account">Login to your Account</h3>
+ -->
+         <div class="input-f">
 
-         <div class="input-fields">
+           <input type="text" id="email-address" name="address" placeholder="UserName" class=" email-address"/>
+           <div class="colore user"><i class="fa fa-user"></i></div>
 
-           <input type="text" id="email-address" name="address" placeholder="Email-Address" class="one email-address"/>
-           <input type="password" id="passwd" name="Password1" placeholder="Password" class="one password"/>
-           <input id="button2" type="submit" class="button sign-in" value ="SIGN-IN"></input>
+           <input type="password" id="passwd" name="Password1" placeholder="Password" class="password"/><div class="colore lock"><i class="fa fa-lock"></i></div>
+           <input id="button2" type="submit" class="sign-ins" value ="SIGN-IN"></input>
 
          </div>
        </form>

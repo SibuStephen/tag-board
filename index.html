@@ -89,12 +89,14 @@ function search_text()
 
   if(forms == "not found")
 {
+
       document.getElementById("not-found").style.display="block";
       document.getElementById("found").style.display="none";
-}else if (forms == "found"){
+}else if (forms = "found"){
 
      document.getElementById("found").style.display="block";
      document.getElementById("not-found").style.display="none";
+
 }else if(forms == " "){
 
     document.getElementById("not-found").style.display="none";
@@ -116,12 +118,12 @@ function search_text()
           <div class="tag-board header-inline-block">
             <a class="small head" href="#">My Tag Board</a>
           </div>
-          <a id="button2" onClick="show();"class=" header-inline-block button button-add">Add Tag</a>
+          <span id="button2" onClick="show();"class=" header-inline-block header-button button-add">Add Tag</span>
         </div>
         <div class="header-half header-right">
           <a class="user-name ">Sid Shankar</a>
           <div class="user-logout header-inline-block">
-            <span id="user_logout" onClick="redirect1();" class=" button ">Logout</span>
+            <a id="user_logout" onClick="redirect1();" class="user-name">Logout</a>
           </div>
         </div>
       </section>
@@ -129,104 +131,143 @@ function search_text()
 
     <section class="main clearfix">
       <div class="container">
-        <div class="tile b-color-red">
-          <h2 class="tile-header">T12345<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
+        <div class="tile">
+          <h2 class="tile-header">T12345
+          </h2>
         <div class="tile-details">
           <div class="text-value">
-            <i class="fa fa-long-arrow-up"></i>
-            <span class="inline-block">36.07</span>
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block  b-color-black">79</a>
           </div>
-            <span class="small-value">Petrol</span>
+            <span class="small-value">UNIT MTS</span>
           </div>
-          <div class="tile-footer">5 min ago</div>
-        </div>
-        <div class="tile b-color-gray">
-          <h2 class="tile-header">T12346<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-          <div class ="text-value">
-          <i class="fa fa-long-arrow-up"></i>
-             <span class="inline-block">30</span>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
           </div>
-            <span class ="small-value">water</span>
           </div>
-          <div class="tile-footer">6 mins ago</div>
-        </div>
-        <div class="tile b-color-yellow">
-          <h2 class="tile-header">T12347<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-          <div class ="text-value">
-            <i class ="fa fa-long-arrow-up"></i>
-            <span class="inline-block">20 </span>
-            </div>
-            <span class ="small-value">Fire</span>
-            </div>
-          <div class="tile-footer">10 min ago</div>
-        </div>
-        <div class="tile b-color-green">
-          <h2 class="tile-header">T12348<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-          <div class ="text-value">
-            <i class ="fa fa-long-arrow-down"></i>
-            <span class="inline-block">36.07 </span>
-          </div>
-            <span class ="small-value">Petrol</span>
-           </div>
-          <div class="tile-footer">15 min ago</div>
-        </div>
-        <div class="tile b-color-red">
-          <h2 class="tile-header">T12349<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-            <div class="text-value">
-              <i class="fa fa-long-arrow-up"></i>
-              <span class="inline-block">36.07</span>
-            </div>
-            <span class ="small-value">Water</span>
-          </div>
-          <div class="tile-footer">20 min ago</div>
-        </div>
-        <div class="tile b-color-gray">
-          <h2 class="tile-header">T12350<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-            <div class ="text-value">
-            <i class="fa fa-long-arrow-up"></i>
-               <span class="inline-block">5.00</span>
-            </div>
-            <span class ="small-value">Fire</span>
-          </div>
-          <div class="tile-footer">30 min ago</div>
-        </div>
-        <div class="tile b-color-yellow">
-          <h2 class="tile-header">T12351<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-           <div class ="text-value">
-              <i class ="fa fa-long-arrow-up"></i>
-              <span class="inline-block">36.07</span>
-            </div>
-            <span class ="small-value">Petrol</span>
-          </div>
-          <div class="tile-footer">40 mins ago</div>
-        </div>
-        <div class="tile b-color-green">
-          <h2 class="tile-header">T12352<p class="image-setting"><i class="fa fa-cog" onClick="setting_redirect();"></i>
-          </p></h2>
-          <div class="tile-details">
-          <div class ="text-value">
-            <i class ="fa fa-long-arrow-down"></i>
-            <span class="inline-block">36.07</span>
-          </div>
-            <span class ="small-value">Water</span>
-          </div>
-          <div class="tile-footer">50 mins ago</div>
-        </div>
 
-      </div>
+         <div class="tile">
+          <h2 class="tile-header">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block  b-color-red">29</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+          </div>
+
+        <div class="tile">
+          <h2 class="tile-header ">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block b-color-black">102</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+         </div>
+
+         <div class="tile ">
+          <h2 class="tile-header">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block  b-color-black">02</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+         </div>
+
+        <div class="tile">
+          <h2 class="tile-header">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block  b-color-black">79</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+          </div>
+
+         <div class="tile ">
+          <h2 class="tile-header ">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block b-color-black">29</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+         </div>
+
+        <div class="tile">
+          <h2 class="tile-header ">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block b-color-green">102</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+         </div>
+
+        <div class="tile">
+          <h2 class="tile-header ">T12345
+          </h2>
+        <div class="tile-details">
+          <div class="text-value">
+           <i class=" asc-sort fa fa-sort-asc"></i>
+           <a class="inline-block b-color-black">02</a>
+          </div>
+            <span class="small-value">UNIT MTS</span>
+          </div>
+          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+           </i>
+           </span>
+          </div>
+       </div>
+
+    </div>
     </section>
 <!-- -->
 
@@ -285,7 +326,7 @@ function search_text()
 
         <ul>
          <li>T5</li>
-         <li>Rise in petrol</li>
+         <li>Rise in UNIT MTS</li>
          <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
         </ul>
 
