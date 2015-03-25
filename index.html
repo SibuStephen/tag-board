@@ -1,390 +1,346 @@
 <!DOCTYPE html>
-<html>
-  <head>
-
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <link href="css/main.css" type="text/css" rel="stylesheet"/>
-
- <script type="text/javascript">
-
-     var add_tag=document.getElementById("button2");
-
-     var user_logout=document.getElementById("user_logout");
-
- // function redirect()
- // {
- //   var username="";
- //   var password="";
- //  // if ()
- //  //   window.location="index.html";
- // }
-
+<html ng-app="tag-board">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/main.css" type="text/css" rel="stylesheet"/>
+  <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script type="application/javascript" src="controller/Angular-controller.js"></script>
+  <script type="text/javascript">
+    var add_tag=document.getElementById("button2");
+    var user_logout=document.getElementById("user_logout");
+// function redirect()
+// {
+//   var username="";
+//   var password="";
+//  // if ()
+//  //   window.location="index.html";
+// }
 function redirect1()
- {
-    window.location="login.html";
- }
-
-    var modalWrapper = document.getElementById("modal_wrapper");
-    var modalWindow = document.getElementById("modal_window");
-
-
+{
+  window.location="login.html";
+}
+var modalWrapper = document.getElementById("modal_wrapper");
+var modalWindow = document.getElementById("modal_window");
 function show()
 {
   document.getElementById("modal_window").style.display="block";
 }
-
 function exit()
 {
   document.getElementById("modal_window").style.display="none";
 }
-
 function setting_redirect()
 {
   document.getElementById("modal_window1").style.display="block";
-
 }
-
 function exit_settings()
 {
   document.getElementById("modal_window1").style.display="none";
 }
-
 function add_click(e1){
-
-   if(e1.className == "fa-fa plus")
-
-   {
-    e1.className=="fa fa-check";
-   }
-   else
-     if(e1.className == "fa-fa check")
-     {
-      e1.className=="fa fa-plus";
-     }
-}
-function add_one()
-{
-  var io = document.getElementsByClassName("fa fa-plus");
-
-for (i=0 ; i<io.length; i++)
-{
-  if(io.className="fa fa-plus")
+  if(e1.className == "fa-fa plus")
   {
-    io.className="fa fa-check";
+    e1.className=="fa fa-check";
   }
-
-}
-}
-
-
-function search_text()
-{
-
- var forms = form2.elements["search"].value;
-
-  if(forms == "not found")
-{
-
+  else
+    if(e1.className == "fa-fa check")
+    {
+      e1.className=="fa fa-plus";
+    }
+  }
+  function add_one()
+  {
+    var io = document.getElementsByClassName("fa fa-plus");
+    for (i=0 ; i<io.length; i++)
+    {
+      if(io.className="fa fa-plus")
+      {
+        io.className="fa fa-check";
+      }
+    }
+  }
+  function search_text()
+  {
+    var forms = form2.elements["search"].value;
+    if(forms == "not found")
+    {
       document.getElementById("not-found").style.display="block";
       document.getElementById("found").style.display="none";
-}else if (forms = "found"){
-
-     document.getElementById("found").style.display="block";
-     document.getElementById("not-found").style.display="none";
-
-}else if(forms == " "){
-
-    document.getElementById("not-found").style.display="none";
-    document.getElementById("found").style.display="none";
-
+    }else if (forms = "found"){
+      document.getElementById("found").style.display="block";
+      document.getElementById("not-found").style.display="none";
+    }else{
+      document.getElementById("not-found").style.display="none";
+      document.getElementById("found").style.display="none";
+    }
   }
-
-}
-
-  </script>
-  </head>
-  <body>
-    <header class="header clearfix">
-      <section class="container container-header">
-        <div class="header-half header-left">
-          <div class="logo inline-block">
-            <a class="logo-link" href="#"><span class="icon-logo">T</span></a>
-          </div>
-          <div class="tag-board header-inline-block">
-            <a class="small head" href="#">My Tag Board</a>
-          </div>
-          <span id="button2" onClick="show();"class=" header-inline-block header-button button-add">Add Tag</span>
+</script>
+</head>
+<body ng-controller="tagboardCtrl">
+  <header class="header clearfix">
+    <section class="container container-header">
+      <div class="header-half header-left">
+        <div class="logo inline-block">
+          <a class="logo-link" href="#"><span class="icon-logo">T</span></a>
         </div>
-        <div class="header-half header-right">
-          <a class="user-name ">Sid Shankar</a>
-          <div class="user-logout header-inline-block">
-            <a id="user_logout" onClick="redirect1();" class="user-name">Logout</a>
-          </div>
+        <div class="tag-board header-inline-block">
+          <a class="small head" href="#">My Tag Board</a>
         </div>
-      </section>
-    </header>
-
-    <section class="main clearfix">
-      <div class="container">
-        <div class="tile">
-          <h2 class="tile-header">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block  b-color-black">79</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-          </div>
-
-         <div class="tile">
-          <h2 class="tile-header">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block  b-color-red">29</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-          </div>
-
-        <div class="tile">
-          <h2 class="tile-header ">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block b-color-black">102</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-         </div>
-
-         <div class="tile ">
-          <h2 class="tile-header">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block  b-color-black">02</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-         </div>
-
-        <div class="tile">
-          <h2 class="tile-header">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block  b-color-black">79</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-          </div>
-
-         <div class="tile ">
-          <h2 class="tile-header ">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block b-color-black">29</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-         </div>
-
-        <div class="tile">
-          <h2 class="tile-header ">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block b-color-green">102</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-         </div>
-
-        <div class="tile">
-          <h2 class="tile-header ">T12345
-          </h2>
-        <div class="tile-details">
-          <div class="text-value">
-           <i class=" asc-sort fa fa-sort-asc"></i>
-           <a class="inline-block b-color-black">02</a>
-          </div>
-            <span class="small-value">UNIT MTS</span>
-          </div>
-          <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-           <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-           </i>
-           </span>
-          </div>
-       </div>
-
-    </div>
+        <span id="button2" onClick="show();"class=" header-inline-block header-button button-add">Add Tag</span>
+      </div>
+      <div class="header-half header-right">
+        <a class="user-name ">Sid Shankar</a>
+        <div class="user-logout header-inline-block">
+          <a id="user_logout" onClick="redirect1();" class="user-name">Logout</a>
+        </div>
+      </div>
     </section>
+  </header>
+  <section class="main clearfix">
+    <div class="container">
+      <div class="tile">
+        <h2 class="tile-header">T12345
+        </h2>
+        <div class="tile-details">
+          <div class="text-value">
+            <i class=" asc-sort fa fa-sort-asc"></i>
+            <a class="inline-block  b-color-black">79</a>
+          </div>
+          <span class="small-value">UNIT MTS</span>
+        </div>
+        <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+          <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+          </i>
+        </span>
+      </div>
+    </div>
+
+    <div ng-repeat="details in tag_list" class="tile">
+      <h2 class="tile-header">{{details.tag_id}}</h2>
+      <div class="tile-details">
+        <div class="text-value">
+          <i class=" asc-sort fa fa-sort-asc"></i>
+          <a class="inline-block b-color-{{details.class}}">{{details.tag_name}}</a>
+        </div>
+        <span class="small-value">{{details.Unit}}</span>
+      </div>
+      <div class="tile-footer"><span class=" time-line color-grey">{{details.time}}</span>
+        <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+        </i>
+        </span>
+      </div>
+    </div>
+
+
+<!--
+    <div class="tile">
+      <h2 class="tile-header">T21345
+      </h2>
+      <div class="tile-details">
+        <div class="text-value">
+          <i class=" asc-sort fa fa-sort-asc"></i>
+          <a class="inline-block  b-color-red">29</a>
+        </div>
+        <span class="small-value">UNIT MTS</span>
+      </div>
+      <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+        <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+        </i>
+      </span>
+    </div>
+  </div>
+  <div class="tile">
+    <h2 class="tile-header ">T22345
+    </h2>
+    <div class="tile-details">
+      <div class="text-value">
+        <i class=" asc-sort fa fa-sort-asc"></i>
+        <a class="inline-block b-color-black">102</a>
+      </div>
+      <span class="small-value">UNIT MTS</span>
+    </div>
+    <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+      <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+      </i>
+    </span>
+  </div>
+</div>
+<div class="tile ">
+  <h2 class="tile-header">T32345
+  </h2>
+  <div class="tile-details">
+    <div class="text-value">
+      <i class=" asc-sort fa fa-sort-asc"></i>
+      <a class="inline-block  b-color-black">02</a>
+    </div>
+    <span class="small-value">UNIT MTS</span>
+  </div>
+  <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+    <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+    </i>
+  </span>
+</div>
+</div>
+<div class="tile">
+  <h2 class="tile-header">T42345
+  </h2>
+  <div class="tile-details">
+    <div class="text-value">
+      <i class=" asc-sort fa fa-sort-asc"></i>
+      <a class="inline-block  b-color-black">79</a>
+    </div>
+    <span class="small-value">UNIT MTS</span>
+  </div>
+  <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+    <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+    </i>
+  </span>
+</div>
+</div>
+<div class="tile ">
+  <h2 class="tile-header ">T52345
+  </h2>
+  <div class="tile-details">
+    <div class="text-value">
+      <i class=" asc-sort fa fa-sort-asc"></i>
+      <a class="inline-block b-color-black">29</a>
+    </div>
+    <span class="small-value">UNIT MTS</span>
+  </div>
+  <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+    <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+    </i>
+  </span>
+</div>
+</div>
+<div class="tile">
+  <h2 class="tile-header ">T62345
+  </h2>
+  <div class="tile-details">
+    <div class="text-value">
+      <i class=" asc-sort fa fa-sort-asc"></i>
+      <a class="inline-block b-color-green">102</a>
+    </div>
+    <span class="small-value">UNIT MTS</span>
+  </div>
+  <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+    <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+    </i>
+  </span>
+</div>
+</div>
+<div class="tile">
+  <h2 class="tile-header ">T72345
+  </h2>
+  <div class="tile-details">
+    <div class="text-value">
+      <i class=" asc-sort fa fa-sort-asc"></i>
+      <a class="inline-block b-color-black">02</a>
+    </div>
+    <span class="small-value">UNIT MTS</span>
+  </div>
+  <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
+    <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+    </i>
+  </span>
+</div>
+</div> -->
+
+</div>
+</section>
 <!-- -->
-
- <div id="modal_wrapper">
- <div id="modal_window">
-
-  <section id="search-c" class="search-content">
-    <div class=" common-body search-body">
-      <div class="common-header search-header">
-        <!-- <input id="button1" type="button"/> -->
-        <a class="button close" onClick="exit();"><i class="fa fa-times "></i></a>
-        <h1 class ="header-title">Search Tags</h1>
+<div id="modal_wrapper">
+  <div id="modal_window">
+    <section id="search-c" class="search-content">
+      <div class=" common-body search-body">
+        <div class="common-header search-header">
+          <!-- <input id="button1" type="button"/> -->
+          <a class="button close" onClick="exit();"><i class="fa fa-times "></i></a>
+          <h1 class ="header-title">Search Tags</h1>
+        </div>
+        <form name="form2">
+          <div class="input-fields">
+            <input type="text" id="search" class="one search-button" placeholder="Search Tags"/>
+            <input type="button" class ="button go-button" onClick="search_text();" value="Go"/>
+          </div>
+          <p id="not-found" class="not-found-result result-color">Not Found</p>
+        </form>
+        <div id="found" class="table-content">
+          <p class="found-result result-color">Found 7 matching results</p>
+          <ul>
+            <li class="name">Name</li>
+            <li class="desc">Description</li>
+            <li class="add">Add</li>
+          </ul>
+          <ul>
+            <li>T1</li>
+            <li>Temp of water</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one();"></i></a>
+            </li>
+          </ul>
+          <ul>
+            <li>T2</li>
+            <li>Stock market</li>
+            <li><a href="#" class="button circular-model"><i  id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T3</li>
+            <li>Stock Rise</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T4</li>
+            <li>Stock Rise</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T5</li>
+            <li>Rise in UNIT MTS</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T6</li>
+            <li>Rise in Stock</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T7</li>
+            <li>Rise in Water Prices</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+        </div>
       </div>
-    <form name="form2">
-      <div class="input-fields">
-
-       <input type="text" id="search" class="one search-button" placeholder="Search Tags"/>
-       <input type="button" class ="button go-button" onClick="search_text();" value="Go"/>
-
-      </div>
-        <p id="not-found" class="not-found-result result-color">Not Found</p>
-   </form>
-      <div id="found" class="table-content">
-       <p class="found-result result-color">Found 7 matching results</p>
-
-        <ul>
-         <li class="name">Name</li>
-         <li class="desc">Description</li>
-         <li class="add">Add</li>
-        </ul>
-
-        <ul>
-         <li>T1</li>
-         <li>Temp of water</li>
-         <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one();"></i></a>
-         </li>
-        </ul>
-
-        <ul>
-         <li>T2</li>
-         <li>Stock market</li>
-         <li><a href="#" class="button circular-model"><i  id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
-        </ul>
-
-        <ul>
-         <li>T3</li>
-         <li>Stock Rise</li>
-         <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
-        </ul>
-
-        <ul>
-         <li>T4</li>
-         <li>Stock Rise</li>
-         <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
-        </ul>
-
-        <ul>
-         <li>T5</li>
-         <li>Rise in UNIT MTS</li>
-         <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
-        </ul>
-
-        <ul>
-         <li>T6</li>
-         <li>Rise in Stock</li>
-         <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
-        </ul>
-
-         <ul>
-          <li>T7</li>
-          <li>Rise in Water Prices</li>
-          <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
-        </ul>
-
-     </div>
-     </div>
-     </div>
+    </div>
   </section>
-
-  </div>
-  </div>
-
-
-  <!-- -->
-  <div id="modal_wrapper1">
+</div>
+</div>
+<!-- -->
+<div id="modal_wrapper1">
   <div id="modal_window1">
-
-   <div class="common-body">
-       <section class ="common-header">
-         <h1 class="header-title">Settings</h1>
-       </section>
-       <form class="login-content" action="index.html">
-
-         <div class="setting-input">
-
+    <div class="common-body">
+      <section class ="common-header">
+        <h1 class="header-title">Settings</h1>
+      </section>
+      <form class="login-content" action="index.html">
+        <div class="setting-input">
           <h1>Upper Range</h1><input type="number" name="Enter Upper Range" placeholder="Enter Upper Range" class="one range"/>
           <h1>Lower Range</h1><input type="number" name="Enter LowerRange" placeholder="Enter LowerRange" class="one  range"/>
-
-         </div>
-
-          <div class="position-setting">
-
-           <a href="#" id="button2" class="button b1" onSubmit="redirect()" >Ok</a>
-           <a href="#" id="button2" class="button b2" onClick="exit_settings();"onSubmit="redirect()">Cancel</a>
-
-          </div>
-         </div>
-
+        </div>
+        <div class="position-setting">
+          <a href="#" id="button2" class="button b1" onSubmit="redirect()" >Ok</a>
+          <a href="#" id="button2" class="button b2" onClick="exit_settings();"onSubmit="redirect()">Cancel</a>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-<!-- -->
-
-    <footer class="footer clearfix">
+  <!-- -->
+  <footer class="footer clearfix">
     <div class ="footer-container">
       <p class="small foot">My Tag Board Copyright 2015 </p>
     </div>
-
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>

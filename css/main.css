@@ -120,7 +120,7 @@ body {
 */}
 
 .tile-header, .tile-footer {
-  padding: 0 5px;
+  padding: 0px 8px !important;
 }
 
 .tile-header {
@@ -145,11 +145,11 @@ padding-top: 12px;
 }
 
 .b-color-green {
-  color: #45B6AF;
+  color: green;
 }
 
 .b-color-red {
-  color: #F3565D;
+  color: red;
 }
 
 .b-color-yellow {
@@ -201,8 +201,8 @@ color: #2FCECE;
 
 .text-value {
   position: relative;
-  top: 30%;
-  left: 50%;
+  top: 39%;
+  left: 55%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
@@ -373,19 +373,19 @@ padding-bottom: 1%;
 
 .email-address
 {
- padding: 3px 8px;
-  width: 100%;
-  font-size: 1.2em;
-  border-style: none;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+ padding: 9px 8px;
+ width: 100%;
+ font-size: 1.2em;
+ border-style: none;
+ border-radius: 4px 4px 0px 0px;
+ border-bottom-style: inset;
+ border-bottom-color: gray;
+ border-bottom-width: thin;
 }
 
 .password
 {
-  padding: 3px 8px;
+  padding: 6px 8px;
   width: 100%;
   font-size: 1.2em;
   border-style: none;
@@ -403,7 +403,7 @@ right: 40%;
 .lock
 {
 position: absolute;
-top: 53%;
+top: 55%;
 right: 40%;
 }
 .colore
@@ -624,9 +624,9 @@ li:nth-child(3n+1)
 .image-setting
 {
  cursor: pointer;
-position: absolute;
-bottom: 2%;
-left: 174px;
+ position: absolute;
+ bottom: 5%;
+ left: 174px;
 }
 
 .btn1-ok
@@ -636,7 +636,9 @@ padding: 9px 32px 4px;
 
 .asc-sort
 {
-
+  position: absolute;
+  left: 23%;
+  top: 52%;
 }
 
 .range
