@@ -1,0 +1,48 @@
+  <!-- -->
+
+        <div id="found" class="table-content" ng-controller="list-of-tags">
+          <p class="found-result result-color">Found 7 matching results</p>
+          <ul ng-repeat="results in tag-lists">
+            <li class="name">{{tag-lists.Name}}</li>
+            <li class="desc">{{tag-lists.Name}}</li>
+            <li class="add">Add</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one();"></i></a></li>
+          </ul>
+          <!-- <ul> -->
+            <!-- <li></li>
+            <li>Temp of water</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one();"></i></a>
+            </li>
+          </ul>
+ -->          <!-- <ul>
+            <li>T2</li>
+            <li>Stock market</li>
+            <li><a href="#" class="button circular-model"><i  id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T3</li>
+            <li>Stock Rise</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T4</li>
+            <li>Stock Rise</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T5</li>
+            <li>Rise in UNIT MTS</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T6</li>
+            <li>Rise in Stock</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul>
+          <ul>
+            <li>T7</li>
+            <li>Rise in Water Prices</li>
+            <li><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></li>
+          </ul> -->
+        </div>
+<!-- -->
