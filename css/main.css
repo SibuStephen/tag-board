@@ -533,15 +533,22 @@ td:nth-child(3)
 .name
 {
  color:#2c3e50;
+ font-size: 2em;
+ width: 40%;
 
 }
 .desc
 {
  color:#2c3e50;
+ text-align: center;
+ font-size: 2em;
 }
 .add
 {
- color:#2c3e50;
+ color: #2C3E50;
+ text-align: center;
+ width: 40%;
+ font-size: 2em;
 
 }
 

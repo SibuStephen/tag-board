@@ -107,7 +107,7 @@ function add_click(e1){
       </div>
     </section>
   </header>
-  <section id="main-change" class="main clearfix">
+  <section  id="main-change" class="main clearfix">
     <div class="container">
       <div class="tile">
         <h2 class="tile-header">T12345
@@ -152,32 +152,37 @@ function add_click(e1){
           <h1 class ="header-title">Search Tags</h1>
         </div>
         <form name="form2">
-            <input type="text" id="search" class="one search-button" placeholder="Search Tags"/>
+
+            <input ng-model="searchText" type="text" id="search" class="one search-button" placeholder="Search Tags"/>
             <input type="button" class ="button go-button" onClick="search_text();" value="Go"/>
+            <p id="not-found" class="not-found-result result-color">Not Found</p>
 
-          <p id="not-found" class="not-found-result result-color">Not Found</p>
         </form>
-        <div id="found" class="table-content">
+
+        <div id="found" class="table-content" >
+
           <p class="found-result result-color">Found 7 matching results</p>
-          <table>
 
+        <table>
           <thead>
-          <tr>
-            <td class="name">Name</td>
-            <td class="desc">Description</td>
-            <td class="add">Add</td>
-          </tr>
+            <tr>
+              <th class="name">Name</th>
+              <th class="desc">Description</th>
+              <th class="add">Add</th>
+            </tr>
           </thead>
-
-          <tr>
-            <td>T1</td>
-            <td>Temp of water</td>
+          <tr ng-repeat="details in tag_list | filter:searchText">
+            <td>{{details.tag_id}}</td>
+            <td>{{details.Unit}}</td>
             <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one();"></i></a>
             </td>
           </tr>
+        </table>
+        </div>
+          <!--
           <tr>
-            <td>T2</td>
-            <td>Stock market</td>
+            <td>{{tag-list.Name}}</td>
+            <td>{{tag-list.Description}}</td>
             <td><a href="#" class="button circular-model"><i  id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
           </tr>
           <tr>
@@ -204,9 +209,8 @@ function add_click(e1){
             <td>T7</td>
             <td>Rise in Water Prices</td>
             <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-        </tr>
-        </table>
-        </div>
+        </tr> -->
+
 
 </div>
 </div>
