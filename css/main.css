@@ -512,17 +512,17 @@ th
 }*/
 td:nth-child(1)
 {
-padding-left: 10px;
+padding: 20px 20px 20px;
 }
 
 td:nth-child(2)
 {
-padding-left: 10px;
+padding: 20px 20px 20px;
 }
 
 td:nth-child(3)
 {
-padding-left: 10px;
+padding: 20px 20px 20px;
 }
 
 .table-content{
@@ -734,6 +734,6 @@ padding: 9px 32px 4px;
 #found
 {
   display: none;
-  width:50%;
+  width:80%;
   margin:0 auto;
 }

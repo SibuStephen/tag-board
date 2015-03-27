@@ -7,6 +7,7 @@
   <link href="css/main.css" type="text/css" rel="stylesheet"/>
   <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
   <script type="application/javascript" src="controller/Angular-controller.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript">
     var add_tag=document.getElementById("button2");
     var user_logout=document.getElementById("user_logout");
@@ -28,7 +29,6 @@ function show()
 {
   document.getElementById("modal_window").style.display="block";
   document.getElementById("main-change").style.opacity=0.1;
-
 }
 
 function exit()
@@ -49,28 +49,11 @@ function exit_settings()
   document.getElementById("main-change").style.opacity=1;
 }
 
-function add_click(e1){
-  if(e1.className == "fa-fa plus")
-  {
-    e1.className=="fa fa-check";
-  }
-  else
-    if(e1.className == "fa-fa check")
-    {
-      e1.className=="fa fa-plus";
-    }
-  }
-  function add_one()
-  {
-    var io = document.getElementsByClassName("fa fa-plus");
-    for (i=0 ; i<io.length; i++)
-    {
-      if(io.className="fa fa-plus")
-      {
-        io.className="fa fa-check";
-      }
-    }
-  }
+// Test content.
+  // $('.inline-block').text('44');
+
+
+
   function search_text()
   {
     var forms = form2.elements["search"].value;
@@ -78,12 +61,14 @@ function add_click(e1){
     {
       document.getElementById("not-found").style.display="block";
       document.getElementById("found").style.display="none";
-    }else if (forms = "found"){
-      document.getElementById("found").style.display="block";
-      document.getElementById("not-found").style.display="none";
-    }else{
+    }
+      if (forms==" "){
       document.getElementById("not-found").style.display="none";
       document.getElementById("found").style.display="none";
+    }
+    else if (forms = "found"){
+      document.getElementById("found").style.display="block";
+      document.getElementById("not-found").style.display="none";
     }
   }
 </script>
@@ -110,23 +95,6 @@ function add_click(e1){
   </header>
   <section  id="main-change" class="main clearfix">
     <div class="container">
-      <div class="tile">
-        <h2 class="tile-header">T12345
-        </h2>
-        <div class="tile-details">
-          <div class="text-value">
-            <i class=" asc-sort fa fa-sort-asc"></i>
-            <a class="inline-block  b-color-black">79</a>
-          </div>
-          <span class="small-value">UNIT MTS</span>
-        </div>
-        <div class="tile-footer"><span class=" time-line color-grey">13 min ago</span>
-          <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-          </i>
-        </span>
-      </div>
-    </div>
-
     <div ng-repeat="details in tag_list" class="tile">
       <h2 class="tile-header">{{details.tag_id}}</h2>
       <div class="tile-details">
@@ -163,7 +131,7 @@ function add_click(e1){
         <div id="found">
 
           <p class="found-result result-color" ng-repeat="detailed in tag_list | filter:searchText:strict">
-               <span count-to="{{tag_list}}" count-from={{""}}>Found matching results ({{detailed.tag_id}})
+              Found matching results ({{parseInt(detailed.tag_id)}})
 
               </p>
 
@@ -183,37 +151,6 @@ function add_click(e1){
           </tr>
         </table>
         </div>
-          <!--
-          <tr>
-            <td>{{tag-list.Name}}</td>
-            <td>{{tag-list.Description}}</td>
-            <td><a href="#" class="button circular-model"><i  id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-          </tr>
-          <tr>
-            <td>T3</td>
-            <td>Stock Rise</td>
-            <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-          </tr>
-          <tr>
-            <td>T4</td>
-            <td>Stock Rise</td>
-            <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-          </tr>
-          <tr>
-            <td>T5</td>
-            <td>Rise in UNIT MTS</td>
-            <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-          </tr>
-          <tr>
-            <td>T6</td>
-            <td>Rise in Stock</td>
-            <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-          </tr>
-          <tr>
-            <td>T7</td>
-            <td>Rise in Water Prices</td>
-            <td><a href="#" class="button circular-model"><i id="one" class="fa fa-plus" onClick="add_one()"></i></a></td>
-        </tr> -->
 
 
 </div>
