@@ -10,7 +10,7 @@ tagboardController.controller('tagboardCtrl', function ($http, $scope) {
 
 tagboardController.controller('list-of-tags',function ($http , $scope){
  $http.get('table-description'+'.json').sucess(function(data){
-    $scope.tag-lists -data;
+    $scope.tag-lists-data;
  });
 });
 
