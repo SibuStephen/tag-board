@@ -16,8 +16,10 @@ tagboardController.controller('tagboardCtrl', ['$http','$scope',
 //    });
 // }]);
 
-// tagboardController.controller('list-search',function ($http , $scope){
-//  $http.get('table-description'+'.json').sucess(function(data){
-//     $scope.tag-lists -data;
+// tagboardController.controller('valueCtrl',function ($http , $scope , tagboardCtrl){
+//  (function(tagboardCtrl ,data, tagboardCtrl){
+//     $scope.tag-lists=data;
+//     $scope.tag-lists.to_int();
+//     return $scope.tag-lists;
 //  });
 
