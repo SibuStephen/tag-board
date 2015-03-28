@@ -1,0 +1,10 @@
+setInterval(function() {
+  spns = document.querySelectorAll('p');
+test(spns);
+}, 5000);
+
+function test(arr) {
+  for(var i=0;i < arr.length;i++) {
+  arr[i].innerHTML = Math.floor(Math.random()*1000);
+}
+}

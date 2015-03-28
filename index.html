@@ -49,6 +49,31 @@ function exit_settings()
   document.getElementById("main-change").style.opacity=1;
 }
 
+
+  setInterval(function()
+{
+  tile1 = document.querySelectorAll('a1');
+   test(tile1);
+}, 5000);
+
+function test(arr1) {
+for(var i=0;i < arr1.length;i++) {
+ arr1[i].innerHTML = Math.floor(Math.random()*100);
+}
+}
+
+ setInterval(function()
+{
+   tile2 = document.querySelectorAll('a2');
+   test(tile2);
+}, 3000-100);
+
+function test(arr1) {
+for(var i=0;i < arr1.length;i++) {
+ arr1[i].innerHTML = Math.floor(Math.random()*1000);
+}
+}
+
 // Test content.
   // $('.inline-block').text('44');
 
@@ -88,7 +113,7 @@ function exit_settings()
       <div class="header-half header-right">
         <a class="user-name ">Sid Shankar</a>
         <div class="user-logout header-inline-block">
-          <a id="user_logout" onClick="redirect1();" class="user-name">Logout</a>
+          <a id="user_logout" onClick="redirect1();" class="user-name">| Logout</a>
         </div>
       </div>
     </section>
@@ -96,11 +121,26 @@ function exit_settings()
   <section  id="main-change" class="main clearfix">
     <div class="container">
     <div ng-repeat="details in tag_list" class="tile">
-      <h2 class="tile-header">{{details.tag_id}}</h2>
+      <h1 class="tile-header">{{details.tag_id}}</h1>
       <div class="tile-details">
         <div class="text-value">
           <i class=" asc-sort fa fa-sort-asc"></i>
-          <a class="inline-block b-color-{{details.class}}">{{details.tag_name}}</a>
+          <a1 class="inline-block b-color-{{details.class}}">{{details.tag_name}}</a1>
+        </div>
+        <span class="small-value">{{details.Unit}}</span>
+      </div>
+      <div class="tile-footer"><span class=" time-line color-grey">{{details.time}}</span>
+        <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
+        </i>
+        </span>
+      </div>
+    </div>
+    <div ng-repeat="details in tag_list" class="tile">
+      <h1 class="tile-header">{{details.tag_id}}</h1>
+      <div class="tile-details">
+        <div class="text-value">
+          <i class=" asc-sort fa fa-sort-asc"></i>
+          <a2 class="inline-block b-color-{{details.class}}">{{details.tag_name}}</a2>
         </div>
         <span class="small-value">{{details.Unit}}</span>
       </div>

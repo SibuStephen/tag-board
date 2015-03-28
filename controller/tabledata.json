@@ -3,7 +3,7 @@
   "tag_id": "SJ.R1",
   "tag_name": 25.4,
   "Unit": "Centigrade",
-  "time": "just now"
+  "time": "5 min ago"
   },
   {
   "tag_id": "SJ.R2",
@@ -15,7 +15,7 @@
   "tag_id": "SJ.R3",
   "tag_name": 18,
   "Unit": "Centigrade",
-  "time": "just now",
+  "time": "30 mins ago",
   "class": "red"
   },
   {
@@ -29,37 +29,37 @@
   "tag_id": "SJ.CO2",
   "tag_name": 350 ,
   "Unit": "ppm",
-  "time": "just now",
+  "time": "40 min ago",
   "class": "green"
   },
   {
   "tag_id": "SJ.AC1",
   "tag_name": "",
   "Unit": "kWatt",
-  "time": "just now"
+  "time": "9 min ago"
   },
   {
   "tag_id": "SJ.AC2",
   "tag_name": 79,
   "Unit": "kWatt",
-  "time": "just now"
+  "time": "50 min ago"
   },
   {
   "tag_id": "SJ.P1",
   "tag_name": 1200,
   "Unit": "mmcf",
-  "time": "just now"
+  "time": "2 hours ago"
   },
   {
   "tag_id": "SJ.G1",
   "tag_name": 23.4,
   "Unit": " ",
-  "time": " "
+  "time": "20 min ago"
   },
   {
   "tag_id": "SJ.G2",
   "tag_name": 23.5,
   "Unit": " ",
-  "time": " "
+  "time": "10 min ago"
   }
 ]
