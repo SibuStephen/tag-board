@@ -59,7 +59,7 @@ font-open :sans condensed;
 .header-right a
 {
  font-size: 24px;
- font-Open: Sans semibold;
+ font-family: 'Open Sans', semibold;
  cursor:pointer;
 }
 .logo-link {
@@ -138,11 +138,11 @@ border-style: solid;
 }
 
 .tile-header {
-  font-size: 26px;
+  font-size: 28px;
   max-width: 50%;
   margin: 0px auto;
   padding-top: 12px;
-  font Open :sans semisolid;
+  font Open :sans semibold;
 }
 .time-line
 {
@@ -425,15 +425,15 @@ padding-top: 0.6%;
 }
 .user
 {
-position: absolute;
-top: 49%;
-right: 40%;
+ position: absolute;
+ top: 55%;
+ right: 40%;
 }
 .lock
 {
-position: absolute;
-top: 55%;
-right: 40%;
+  position: absolute;
+  top: 60%;
+  right: 40%;
 }
 .colore
 {
