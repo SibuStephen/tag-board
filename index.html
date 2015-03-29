@@ -51,19 +51,21 @@ function exit_settings()
 
   setInterval(function()
 {
-  tile1 = document.querySelectorAll('a1');
-   test(tile1);
-},
- function()
- {
-  for(var i=10;i<1000;i++)
-  {
+  tile1 = document.querySelectorAll('a1:nth-child(1)');
+  test(tile1);
+},100
+//  function()
+//  {
 
-   i = i+10;
+//   var a = tile1;
 
-  }
+//   for (var i=0;i<a;i++)
+//   {
+//     var b = a+1000;
+//  b--;
+// }
+// }
 
-  }
 );
 
 function test(arr1) {
@@ -72,17 +74,60 @@ for(var i=0;i < arr1.length;i++) {
 }
 }
 
- setInterval(function()
+function timer(number)
 {
-   tile2 = document.querySelectorAll('a2');
-   test(tile2);
-}, 3000-100);
+  for (var i=number;i<8000;)
+  {
 
-function test(arr1) {
-for(var i=0;i < arr1.length;i++) {
- arr1[i].innerHTML = Math.floor(Math.random()*1000);
+         if(i=1000)
+        {
+          i = i+1000;
+           i++;
+          return i;
+        }
+
+  }
+}
+  setInterval(function()
+
+{
+  tile2 = document.querySelectorAll('a1');
+   test(tile2);
+ },timer(1000)
+
+);
+function test(arr2) {
+for(var i=0;i < arr2.length;i++) {
+ arr2[i].innerHTML = Math.floor(Math.random()*100);
 }
 }
+
+
+//   setInterval(function()
+// {
+//   tile1 = document.querySelectorAll('a1:nth-child(n-2)');
+//    test(tile1);
+//  },1000
+// //  function()
+// // {
+
+// //   var a = tile1[0];
+
+// //   for (var i=0;i<a;i++)
+// //   {
+// //     var b = a+1000;
+// // b--;
+// // }
+// // }
+
+// );
+
+// function test(arr1) {
+// for(var i=0;i < arr1.length;i++) {
+//  arr1[i].innerHTML = Math.floor(Math.random()*1000);
+// }
+// }
+
 
 // Test content.
   // $('.inline-block').text('44');
@@ -105,6 +150,32 @@ for(var i=0;i < arr1.length;i++) {
       document.getElementById("found").style.display="block";
       document.getElementById("not-found").style.display="none";
     }
+
+    // var founds = document.innerHTML("detailed in tag_list | filter:searchText:strict");
+
+    //    count = 0;
+    //    for (var i=0;i<founds;i++)
+    //    {
+    //     count++;
+    //    }
+    //    return p1.innerHTML(count);
+
+  }
+  function count()
+  {
+
+   var p2 = document.getElementById('p1');
+   var p3 =  p2.innerHTML;
+  for each(p3 in )
+   console.log(p3);
+
+   var count=0;
+
+     for (var i=0;i<p3.value;i++)
+     {
+        count++;
+     }
+     p2.innerHtml = count.value;
   }
 </script>
 </head>
@@ -145,22 +216,6 @@ for(var i=0;i < arr1.length;i++) {
         </span>
       </div>
     </div>
-    <div ng-repeat="details in tag_list" class="tile">
-      <h1 class="tile-header">{{details.tag_id}}</h1>
-      <div class="tile-details">
-        <div class="text-value">
-          <i class=" asc-sort fa fa-sort-asc"></i>
-          <a2 class="inline-block b-color-{{details.class}}">{{details.tag_name}}</a2>
-        </div>
-        <span class="small-value">{{details.Unit}}</span>
-      </div>
-      <div class="tile-footer"><span class=" time-line color-grey">{{details.time}}</span>
-        <span class=" color-grey image-setting"><i class="fa fa-cog" onClick="setting_redirect();">
-        </i>
-        </span>
-      </div>
-    </div>
-
 </div>
 </section>
 <!-- -->
@@ -180,11 +235,9 @@ for(var i=0;i < arr1.length;i++) {
 
         <div id="found">
 
-          <p class="found-result result-color" ng-repeat="detailed in tag_list | filter:searchText:strict">
-              Found matching results {{detailed.tag_id}}
-
-              </p>
-
+          <p id="p1"class="found-result result-color" ng-repeat="detailed in tag_list | filter:searchText:strict " onClick="count();">
+              {{detailed.tag_id}}
+          </p>
         <table>
           <thead>
             <tr>
