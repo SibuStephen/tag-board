@@ -223,9 +223,10 @@ left: 24%;
 }
 
 .text-value {
-font-weight: bold;
-transform: translate(2%, 54%);
-position:relative;
+
+  font-weight: bold;
+  transform: translate(2%, 54%);
+
 }
 .time-line
 {
