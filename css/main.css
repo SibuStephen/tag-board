@@ -226,6 +226,7 @@ left: 24%;
 
   font-weight: bold;
   transform: translate(2%, 54%);
+  overflow:hidden;
 
 }
 .time-line
