@@ -7,8 +7,8 @@
 body {
 
   background-color: #ADD8E6;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 75%;
+ /* font-family: 'Titillium Web', sans-serif;
+*/  font-size: 75%;
 }
 
 .clearfix:after {
@@ -44,7 +44,7 @@ body {
 color: rgb(255, 255, 255);
 text-decoration: none;
 font-size: 24px;
-font-open :sans condensed
+font-open :sans condensed;
 }
 
 .header-half {
@@ -613,6 +613,7 @@ th
 
  margin-top: 1%;
  margin-bottom: 2%;
+ margin-left:50px;
 }
 
 .result-color
