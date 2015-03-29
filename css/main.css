@@ -212,8 +212,8 @@ padding-left: 28px;
 color: #2FCECE;
 font-open: Sans Regular;
 position: absolute;
-top: 65%;
-left: 20%;
+top: 51%;
+left: 24%;
 
 }
 
@@ -224,12 +224,16 @@ left: 20%;
 
 .text-value {
 font-weight: bold;
-transform: translate(4%, 72%);
+transform: translate(2%, 54%);
 position:relative;
 }
 .time-line
 {
  top: 3%;
+}
+.time-line:after
+{
+  content:"min ago";
 }
 .text-value span {
   font-size: 1.2em;
