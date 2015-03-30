@@ -3,63 +3,73 @@
   "tag_id": "SJ.R1",
   "tag_name": 25.4,
   "Unit": "Centigrade",
-  "time": "5 min ago"
+  "time": "5 min ago",
+  "classes":"fa-sort-asc"
   },
   {
   "tag_id": "SJ.R2",
   "tag_name": 27,
   "Unit": "Centigrade",
-  "time": "just now"
+  "time": "just now",
+  "classes":"fa-sort-asc"
   },
   {
   "tag_id": "SJ.R3",
   "tag_name": 18,
   "Unit": "Centigrade",
   "time": "30 mins ago",
-  "class": "red"
+  "class": "red",
+  "classes":"fa-sort-desc"
   },
   {
   "tag_id": "SJ.T1",
   "tag_name":230,
   "Unit": "litre",
   "time": "just now",
-  "class": "green"
+  "class": "green",
+  "classes":"fa-sort-desc"
   },
   {
   "tag_id": "SJ.CO2",
   "tag_name": 350 ,
   "Unit": "ppm",
   "time": "40 min ago",
-  "class": "green"
+  "class": "green",
+  "classes":"fa-sort-asc"
   },
   {
   "tag_id": "SJ.AC1",
   "tag_name": "",
   "Unit": "kWatt",
-  "time": "9 min ago"
+  "time": "9 min ago",
+  "classes":"fa-sort-asc"
   },
   {
   "tag_id": "SJ.AC2",
   "tag_name": 79,
   "Unit": "kWatt",
-  "time": "50 min ago"
+  "time": "50 min ago",
+  "classes":"fa-sort-desc"
   },
   {
   "tag_id": "SJ.P1",
   "tag_name": 1200,
   "Unit": "mmcf",
-  "time": "2 hours ago"
+  "time": "2 hours ago",
+  "classes":"fa-sort-desc"
   },
   {
   "tag_id": "SJ.G1",
   "tag_name": 23.4,
   "Unit": " ",
-  "time": "20 min ago"
+  "time": "20 min ago",
+  "classes":"fa-sort-asc"
   },
   {
   "tag_id": "SJ.G2",
   "tag_name": 23.5,
   "Unit": " ",
-  "time": "10 min ago"
+  "time": "10 min ago",
+  "classes":"fa-sort-asc"
   }
 ]
