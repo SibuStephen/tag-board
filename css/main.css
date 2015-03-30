@@ -289,13 +289,14 @@ left: 26%;
 {
 
  position:absolute;
- left:61%;
+
+ margin-left: -11px;
 }
 
 .locker
 {
  position:absolute;
- left:61%;
+ margin-left: -11px;
 }
 body
 {
