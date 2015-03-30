@@ -225,7 +225,8 @@ left: 26%;
 .text-value {
 
   font-weight: bold;
-  transform: translate(2%, 69%);
+  -webkit-transform: translate(2%, 69%);
+  -moz-transform: translate(2%, 69%);
   overflow:hidden;
   position: relative;
 }
