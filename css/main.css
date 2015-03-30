@@ -227,7 +227,7 @@ left: 26%;
   font-weight: bold;
   transform: translate(2%, 69%);
   overflow:hidden;
-
+  position: relative;
 }
 
 .time-line
@@ -488,8 +488,8 @@ font-size:17px;
   color: #40ABCE;
   height: 30px;
   position: absolute;
-  top: -5px;
-  right: 0;
+  top: -1px;
+  right: 3px;
   font-size:2em;
 }
 
