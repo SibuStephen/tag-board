@@ -18,7 +18,7 @@ body {
 }
 
 .inline-block {
-  display: inline-block;
+  /*display: inline-block;*/
   /*font-family:Font-Open sans Extrabold;*/
   font-size:51px;
   font-open: Sans ExtraBold;
