@@ -49,28 +49,18 @@ function exit_settings()
   document.getElementById("main-change").style.opacity=1;
 }
 
-  setInterval(function()
-{
-  tile1 = document.querySelectorAll('a1:nth-child(1)');
-  test(tile1);
-},100
-//  function()
-//  {
+//   setInterval(function()
+// {
+//   tile1 = document.querySelectorAll('a1:nth-child(1)');
+//   test(tile1);
+// },100
 
-//   var a = tile1;
-
-//   for (var i=0;i<a;i++)
-//   {
-//     var b = a+1000;
-//  b--;
-// }
-// }
-
-);
+// );
 
 function test(arr1) {
 for(var i=0;i < arr1.length;i++) {
- arr1[i].innerHTML = Math.floor(Math.random()*100);
+ arr1[i].innerHTML = Math.floor(Math.random()*1000);
+
 }
 }
 

@@ -59,7 +59,7 @@ font-open :sans condensed;
 .header-right a
 {
  font-size: 24px;
- font-family: 'Open Sans', semibold;
+ /*font-family: 'Open Sans', semibold;*/
  cursor:pointer;
 }
 .logo-link {
@@ -212,8 +212,8 @@ padding-left: 28px;
 color: #2FCECE;
 font-open: Sans Regular;
 position: absolute;
-top: 51%;
-left: 24%;
+top: 53%;
+left: 26%;
 
 }
 
@@ -229,6 +229,7 @@ left: 24%;
   overflow:hidden;
 
 }
+
 .time-line
 {
  top: 3%;
@@ -273,16 +274,29 @@ left: 24%;
 .header-title
 {
  text-align: center;
- color:#40ABCE;
+ color:#fff;
  padding-bottom: 10;
 }
 
 .common-container{
 
- max-width: 50%;
+ max-width: 700px;
+ width:100%;
  padding: 150px;
 }
 
+.users
+{
+
+ position:absolute;
+ left:61%;
+}
+
+.locker
+{
+ position:absolute;
+ left:61%;
+}
 body
 {
 background-color: rgb(118, 173, 189);
@@ -431,15 +445,11 @@ padding-top: 0.6%;
 }
 .user
 {
- position: absolute;
- top: 55%;
- right: 40%;
+
 }
 .lock
 {
-  position: absolute;
-  top: 60%;
-  right: 40%;
+
 }
 .colore
 {
